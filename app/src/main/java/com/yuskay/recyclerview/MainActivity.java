@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
         //Create a list of contacts
 
         List<Contacts> contactsList = new ArrayList<>();
-        contactsList.add(new Contacts("Biraj ", "9809716524",R.drawable.biraj));
-        contactsList.add(new Contacts("Harry ", "9809716524",R.drawable.harry));
-        contactsList.add(new Contacts("Nikhila ", "9809716524",R.drawable.nikhila));
-        contactsList.add(new Contacts("Rajesh ", "9809716524",R.drawable.rajesh));
-        contactsList.add(new Contacts("Rinku ", "9809716524",R.drawable.rinku));
+        contactsList.add(new Contacts("Biraj ", "9809716524","pokhara","biraj@gmail.com", R.drawable.biraj));
+        contactsList.add(new Contacts("Harry ", "9809716524","ghorahi","harry@gmail.com",R.drawable.harry));
+        contactsList.add(new Contacts("Nikhila ", "9809716524","ktm","nikhila@gmail.com",R.drawable.nikhila));
+        contactsList.add(new Contacts("Rajesh ", "9809716524","dharan","rajesh@gmail.com",R.drawable.rajesh));
+        contactsList.add(new Contacts("Rinku ", "9809716524","Butwal","rinku@gmail.com",R.drawable.rinku));
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
         recyclerView.setAdapter(contactsAdapter);
